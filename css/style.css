@@ -6,9 +6,9 @@ body{
 }
 
 header{
-    background-color: rgb(38, 165, 38);
+    background-color:#33af65;
     text-align: center;
-    color: black;
+    color:#1b3d2d;
     padding: 0.8rem 0;
     border: none;
 }
@@ -28,3 +28,25 @@ justify-content: space-between;
     border-radius: 5px;
   }
 
+.section1{
+padding: 80px 20px;
+text-align: center;
+align-items: center;
+  }
+  .section1 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #204131;
+  }
+
+   .btn-principal {
+      margin-top: 30px;
+      padding: 14px 32px;
+      font-size: 1rem;
+      color: white;
+      background-color: #264d3b; /* verde escuro */
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
