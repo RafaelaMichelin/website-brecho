@@ -29,6 +29,9 @@ justify-content: space-between;
     font-size: 15px;
     border-radius: 5px;
   }
+  nav a:hover{
+    background-color: #27884e ;
+}
 
 .section1{
 padding: 100px 20px;
@@ -53,6 +56,10 @@ align-items: center;
       transition: background 0.3s ease;
       margin-bottom: 150px;
     }
+    .btn-principal:hover {
+  background-color: #3b6d56;
+}
+
 
 
 /* PAGINA SOBRE NOS*/
@@ -87,7 +94,9 @@ align-items: center;
       line-height: 1.6;
     }
 
-    /*Rodapé*/
+
+
+    /*RODAPÉ*/
     footer{
     text-align: center;
     background-color:#33af65;
@@ -96,15 +105,16 @@ align-items: center;
   
 }
 
+
 /* PAGINA CADASTRO*/
-/* Centralizando a section e o container */
+
 .section3 {
-  padding: 80px 20px;
+  padding: 15% 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: 155px;
+  margin-top: 150px;
 }
 
 /* Container do cadastro */
@@ -118,11 +128,11 @@ align-items: center;
   border-radius: 8px;
 }
 
-/* Estilo geral do formulário */
+
 .formulario {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 15px; 
 }
 
 /* Estilo para labels */
