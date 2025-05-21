@@ -56,11 +56,12 @@ align-items: center;
 
 
 /* PAGINA SOBRE NOS*/
-section{
+.section2{
 padding: 80px 20px;
 display: flex;
 justify-content: center;
 align-items: center;
+
 
     }
 .container-sobre {
@@ -92,5 +93,68 @@ align-items: center;
     background-color:#33af65;
     color: #fff;
     padding: 0.5rem 0;
-   
+  
+}
+
+/* PAGINA CADASTRO*/
+/* Centralizando a section e o container */
+.section3 {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 155px;
+}
+
+/* Container do cadastro */
+.container-cadastro {
+  width: 100%;
+  max-width: 500px;  
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilo geral do formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+/* Estilo para labels */
+.formulario label {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Estilo para os inputs */
+.formulario input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Botão de cadastrar */
+.btn-cadastrar {
+  width: 100%;
+  padding: 14px;
+  background-color: #264d3b;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background-color: #3b6d56;
 }
