@@ -11,7 +11,7 @@ header{
     background-color:#33af65;
     text-align: center;
     color:#1b3d2d;
-    padding: 0.8rem 0;
+    padding: 1.5rem 0;
     border: none;
 }
 .cabecalho{
@@ -151,6 +151,8 @@ align-items: center;
   border-radius: 8px;
   font-size: 1rem;
 }
+
+
 
 /* Botão de cadastrar */
 .btn-cadastrar {
