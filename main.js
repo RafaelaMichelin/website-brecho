@@ -48,3 +48,19 @@ if(resto!=parseInt(cpf.substring(10,11))){
     return true;
 }
 
+function cadastrar(){
+const cpfInput = document.getElementById("cpf").value; //busca o valor dentro do input
+const messageDiv = document.getElementById("message");
+
+if(validarCPF(cpfInput)){
+    messageDiv.textContent = "VÁLIDO";
+
+}
+else{
+    messageDiv.textContent = " Favor digitar um CPF válido";
+    messageDiv.style.color = "red";
+
+}
+messageDiv.style.display = "block";
+}
+
