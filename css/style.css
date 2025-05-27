@@ -18,9 +18,10 @@ header{
 }
 
 .cabecalho{
-background-size:cover ;
-background-position: center;
-justify-content: space-between;
+ background-size: cover;
+  background-position: center;
+  text-align: center;     
+  padding: 10px 20px;
 
 }
 .cabecalho h1{
@@ -135,12 +136,11 @@ align-items: center;
 /* PAGINA CADASTRO*/
 
 .section3 {
-  padding: 15% 20px;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 150px;
+  flex-direction: column;
 }
 
 /* Container do cadastro */
@@ -149,9 +149,10 @@ align-items: center;
   max-width: 500px;  
   text-align: center;
   padding: 30px;
-  background-color: white;
+  background-color: #f5f5d4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+ 
 }
 
 
@@ -185,7 +186,7 @@ align-items: center;
   width: 100%;
   padding: 14px;
   background-color: #264d3b;
-  color: white;
+  color: #F5F5DC;
   font-size: 1.1rem;
   border: none;
   border-radius: 8px;
@@ -195,4 +196,85 @@ align-items: center;
 
 .btn-cadastrar:hover {
   background-color: #3b6d56;
+}
+
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+  
+  .cabecalho nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cabecalho button {
+    margin-top: 16px;
+  }
+
+  /* HOME */
+  .section1 h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .btn-principal {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* SOBRE */
+  .section2 {
+    padding: 60px 10px;
+  }
+
+  .container-sobre {
+    padding: 16px;
+  }
+
+  .container-sobre h1 {
+    font-size: 2rem;
+  }
+
+  .container-sobre p {
+    font-size: 1rem;
+  }
+
+  /* CADASTRO */
+  .section3 {
+    padding: 80px 10px;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .container-cadastro {
+    padding: 20px;
+  }
+
+  .formulario {
+    gap: 10px;
+  }
+
+  .formulario label {
+    font-size: 0.95rem;
+  }
+
+  .formulario input {
+    font-size: 0.95rem;
+  }
+
+  .btn-cadastrar {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Ajuste no cabeçalho */
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
 }
