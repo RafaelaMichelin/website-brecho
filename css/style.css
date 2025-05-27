@@ -49,6 +49,7 @@ header{
   font-size: 16px;
   font-family: Almendra Sans;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 button:hover{
@@ -59,6 +60,7 @@ button:hover{
 padding: 100px 20px;
 text-align: center;
 align-items: center;
+margin-bottom: 5rem;
   }
   .section1 h1 {
     font-size: 2.4rem;
@@ -76,12 +78,64 @@ align-items: center;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin-bottom: 150px;
+      text-decoration: none;
     }
     .btn-principal:hover {
   background-color: #3b6d56;
 }
 
+
+.main{
+    width: 90%;
+   
+    margin: 2rem auto;
+   
+}
+h2{
+   font-family: Cinzel Decorative;
+   color: #C9B037;
+   background-color: #264d3b;
+   text-align: center;
+}
+.section-produtos{
+    margin-bottom: 2rem;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza os produtos */
+    gap: 1.5rem
+  
+}
+
+.produto{
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.produto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+}
+.preco {
+font-weight: bold;
+color:#070000;
+font-size: 24px;
+margin-bottom: 1rem;
+}
+.adicionar {
+    background-color: #C9B037;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
 
 
 
