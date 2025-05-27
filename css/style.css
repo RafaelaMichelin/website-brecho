@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background-color: #ffff;
+    background-color: #F5F5DC;
    
     }
 
@@ -81,27 +81,7 @@ align-items: center;
   background-color: #3b6d56;
 }
 
-.main{
-    width: 90%;
-    margin: 2rem auto;
-}
-.section-produtos{
-    margin-bottom: 2rem;
-}
 
-.produto{
-    background-color: #b8d6bf;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-.img{
-  width: 10px;
-}
 
 
 /* PAGINA SOBRE NOS*/
@@ -115,22 +95,26 @@ align-items: center;
     }
 .container-sobre {
      margin-bottom: 40px;
-      text-align: center;
+
       align-items: center;
       max-width: 800px;
       padding: 20px;
-      background-color: white;
+      background-color:#F5F5DC;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
 
+
     .container-sobre h1 {
+      text-align: center;
       font-size: 2.5rem;
-      color: #264d3b; /* Verde escuro */
+      color: #264d3b; 
       margin-bottom: 20px;
+      font-family: Almendra Sans;
     }
 
     .container-sobre p {
+      text-align: justify;
       font-size: 1.2rem;
       color: #242323;
       line-height: 1.6;
