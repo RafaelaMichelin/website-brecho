@@ -62,19 +62,19 @@ align-items: center;
   .section1 h1 {
     font-size: 2.4rem;
     margin-bottom: 20px;
-    color: #204131;
+    color:#C9B037;
+    font-family: Cinzel Decorative;
   }
 
    .btn-principal {
       margin-top: 30px;
       padding: 14px 32px;
       font-size: 1rem;
-      color: white;
-      background-color: #264d3b; /* verde escuro */
+      color: #F5F5DC;
+      background-color: #264d3b; 
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s ease;
       margin-bottom: 150px;
     }
     .btn-principal:hover {
@@ -141,7 +141,7 @@ align-items: center;
     /*RODAPÉ*/
     footer{
     text-align: center;
-    background-color:#33af65;
+    background-color:#8B0000;
     color: #fff;
     padding: 0.5rem 0;
   
