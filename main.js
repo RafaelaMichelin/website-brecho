@@ -51,6 +51,7 @@ if(resto!=parseInt(cpf.substring(10,11))){
 function cadastrar(){
 const cpfInput = document.getElementById("cpf").value; //busca o valor dentro do input
 const messageDiv = document.getElementById("message");
+const messageError = document.getElementById("messageError")
 
 if(validarCPF(cpfInput)){
     messageDiv.textContent = "VÁLIDO";
@@ -59,8 +60,11 @@ if(validarCPF(cpfInput)){
 else{
     messageDiv.textContent = " Favor digitar um CPF válido";
     messageDiv.style.color = "red";
+    messageError.textContent = "ERRO: conferir credenciais";
+    messageError.style.color = "red";
 
 }
 messageDiv.style.display = "block";
+messageError.style.display = "block";
 }
 
