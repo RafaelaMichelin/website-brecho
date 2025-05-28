@@ -92,9 +92,13 @@ const pesquisarCep = async() =>{
            }
            else{
 
-            preencherformulario(addres);
+            preencherFormulario(addres);
            }
     }
+
+}
+
+preencherFormulario = (endereco)  => {
 
 }
 
