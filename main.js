@@ -51,6 +51,7 @@ if(resto!=parseInt(cpf.substring(10,11))){
 function cadastrar(){
 const cpfInput = document.getElementById("cpf").value; //busca o valor dentro do input
 const messageDiv = document.getElementById("message");
+
 const messageError = document.getElementById("messageError")
 
 if(validarCPF(cpfInput)){
@@ -68,3 +69,22 @@ messageDiv.style.display = "block";
 messageError.style.display = "block";
 }
 
+
+'use strict'; //usado para mostrar o problema, caso tenha
+
+ //verifica se o CEP é valido
+const eNumero = (numero) => /^[0-9]+$/.test(numero);                //expressão para ver se está entre 0 e 9
+const cepValido = (cep) => cep.length == 8 && eNumero(cep);        //length verifica o tamanho do cep
+
+const pesquisarCep = async() =>{
+    limparFormulario();
+    const url = ` http://viacep.com.br/ws/01001000/json/`;
+}
+
+// função limpar formulario
+limparFormulario = () =>{                                    // => arrow function nao precisa do return
+    document.getElementById('rua').value = '';
+    document.getElementById('bairro').value = '';
+    document.getElementById('cidade').value = '';
+    document.getElementById('estado').value = '';
+}
