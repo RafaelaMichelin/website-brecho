@@ -79,6 +79,23 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);        //length veri
 const pesquisarCep = async() =>{
     limparFormulario();
     const url = ` http://viacep.com.br/ws/${cep.value}/json/`;
+
+
+    //reliza verificação 
+    if(cepValido(cep.value)){
+           const dados = await fetch(url);      //await é uma pausa para ver se o fetch vai conseguir dar o retorno da url
+           const addres = await dados.json();    //transforma o conteudo dados em json
+        
+        //hasOwnProprety retorna um valor boolean indicando se o objetivo possui a propriedade específica no parenteses
+           if(addres.hasOwnProperty('erro')){
+              alert('CEP não encontrado');
+           }
+           else{
+
+            preencherformulario(addres);
+           }
+    }
+
 }
 
 // função limpar formulario
