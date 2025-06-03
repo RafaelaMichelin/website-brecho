@@ -80,7 +80,7 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);        //length veri
 
 const pesquisarCep = async() =>{
     limparFormulario();
-    const url = ` http://viacep.com.br/ws/${cep.value}/json/`;
+    const url = ` https://viacep.com.br/ws/${cep.value}/json/`;
 
 
     //reliza verificação 
