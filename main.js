@@ -70,11 +70,13 @@ messageError.style.display = "block";
 }
 
 
+
+
 'use strict'; //usado para mostrar o problema, caso tenha
 
  //verifica se o CEP é valido
 const eNumero = (numero) => /^[0-9]+$/.test(numero);                //expressão para ver se está entre 0 e 9
-const cepValido = (cep) => cep.length == 8 && eNumero(cep);        //length verifica o tamanho do cep
+const cepValido = (cep) => cep.length == 8 && eNumero(cep);        //length verifica o tamanho do cep// se tem 8 digitos
 
 const pesquisarCep = async() =>{
     limparFormulario();
@@ -91,21 +93,27 @@ const pesquisarCep = async() =>{
               alert('CEP não encontrado');
            }
            else{
-
             preencherFormulario(addres);
            }
     }
 
 }
 
-preencherFormulario = (endereco)  => {
+const preencherFormulario = (endereco)  => {
+    document.getElementById('rua').value = endereco.logradouro;
+    document.getElementById('bairro').value = endereco.bairro;
+    document.getElementById('cidade').value = endereco.localidade;
+    document.getElementById('estado').value = endereco.estado;
 
 }
 
 // função limpar formulario
-limparFormulario = () =>{                                    // => arrow function nao precisa do return
+const limparFormulario = () =>{                                    // => arrow function nao precisa do return
     document.getElementById('rua').value = '';
     document.getElementById('bairro').value = '';
     document.getElementById('cidade').value = '';
     document.getElementById('estado').value = '';
 }
+
+
+document.getElementById('cep').addEventListener('focusout',pesquisarCep);       //evento
