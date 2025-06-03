@@ -96,6 +96,9 @@ const pesquisarCep = async() =>{
             preencherFormulario(addres);
            }
     }
+    else{
+        alert('CEP incorreto, tente novamente!');    //se for digitado cep incorreto
+    }
 
 }
 
